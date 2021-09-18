@@ -32,7 +32,7 @@ query {
 }
 
 ## Query to get Posts By ID:
-`
+`code(
 query{
     postById(postId:2){
         id
@@ -40,6 +40,7 @@ query{
         content
     }
 }
+)
 `
 
 ## Query to Create a New User
