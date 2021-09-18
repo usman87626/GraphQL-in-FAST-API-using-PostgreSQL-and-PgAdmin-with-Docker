@@ -25,11 +25,13 @@ You can migrate database as well after running the container using the above ste
 You can use the following Queries to add or fetch data from Database:
 
 ## Query to get All the Posts from Database
+<pre>
 query {
     allPosts{
         title
     }
 }
+</pre>
 
 ## Query to get Posts By ID:
 <pre>
@@ -43,21 +45,27 @@ query{
 </pre>
 
 ## Query to Create a New User
+
+<pre>
 mutation CreateNewUser{
     createNewUser(username:"NAME_OF_USER",password:"PASSWORD_OF_USER"){
         ok
     }
 }
+</pre>
 
 ## Query to authenticate the User usign JSON Web Token(JWT) Authentication
+<pre>
 mutation authenticateUser{
   authenticateUser(username:"lastuser",password:"last-user"){
     ok
     token
   }
 }
+</pre>
 
 ## Query to Create a New Post
+<pre>
 mutation CreateNewPost{
     createNewPost(
                 title:"TITLE_OF_THE_POST",
@@ -66,3 +74,4 @@ mutation CreateNewPost{
         result
     }
 }
+</pre>
