@@ -32,7 +32,7 @@ query {
 }
 
 ## Query to get Posts By ID:
-`code(
+<pre>
 query{
     postById(postId:2){
         id
@@ -40,8 +40,7 @@ query{
         content
     }
 }
-)
-`
+</pre>
 
 ## Query to Create a New User
 mutation CreateNewUser{
